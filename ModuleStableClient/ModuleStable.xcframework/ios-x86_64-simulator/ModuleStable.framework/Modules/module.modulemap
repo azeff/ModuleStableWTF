@@ -1,0 +1,11 @@
+framework module ModuleStable {
+  umbrella header "ModuleStable.h"
+
+  export *
+  module * { export * }
+}
+
+module ModuleStable.Swift {
+    header "ModuleStable-Swift.h"
+    requires objc
+}
